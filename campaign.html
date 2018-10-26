@@ -143,8 +143,8 @@
         if (rect.top + 200 <= document.documentElement.clientHeight)
           el.classList.add('reveal');
       }
-      document.addEventListener('DOMContentLoaded', reveal);
-      window.addEventListener('scroll', reveal);
+      $(reveal);
+      $(window).scroll(reveal);
     </script>
   </body>
 </html>
