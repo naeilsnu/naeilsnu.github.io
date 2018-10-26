@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+$(function() {
   try {
     new Rellax('.rellax', {
       center: true
@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
   catch (e) {}
 });
 
-window.addEventListener('scroll', function() {
+$(window).scroll(function() {
   var scaledown = document.getElementById('scaledown'),
       sections = document.querySelectorAll('section:not(.reveal)'),
       fadeouts = document.querySelectorAll('.fadeout[data-fadeout-id]'),
