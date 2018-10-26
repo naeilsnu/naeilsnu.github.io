@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta property="og:title" content="내일의 총학생회">
+    <meta property="og:description" content="내 일상과 함께하는 총학생회, 내일">
+    <meta property="og:image" content="https://naeilsnu.github.io/og.jpg">
+    <title>내일의 총학생회</title>
+    <script defer src="https://cdn.jsdelivr.net/npm/rellax@1.7.1/rellax.min.js" integrity="sha256-D8Gs+q912m9K1KjzTzBQas+zR0oQtxQEZDHh8NVVDx8=" crossorigin="anonymous"></script>
+    <script defer src="js/main.js"></script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'UA-128173672-1'); gtag('set', {'user_id': 'USER_ID'});</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128173672-1"></script>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,500,900">
+    <style>
+      body {
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 300;
+        color: #1b0000;
+        background-image: linear-gradient(to bottom, #efebe9, #d7ccc8);
+        background-color: #efebe9;
+      }
+      a, a:link, a:visited, a:hover, a:active {
+        color: inherit;
+        text-decoration: none;
+      }
+      img {
+        width: 100%;
+      }
+      h1 {
+        font-size: 36px;
+        font-weight: 100;
+        margin-bottom: 24px;
+        transition-delay: 0, 0;
+      }
+      p {
+        font-size: 17px;
+        padding-right: 1.5px;
+        padding-left: 3px;
+      }
+      p:not(.cta), .kard {
+        transition-delay: 0.15s, 0.15s;
+      }
+      p.cta {
+        margin-top: 24px;
+        transition-delay: 0.3s, 0.3s;
+      }
+      .animate {
+        opacity: 0;
+        transform: translateY(25px);
+        transition-property: opacity, transform;
+        transition-duration: 1.2s, 1.4s;
+        transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1), cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        will-change: opacity, transform;
+      }
+      .reveal .animate {
+        opacity: 1;
+        transform: translateY(0px);
+      }
+      .kard {
+        position: relative;
+        width: 100%;
+        height: 90px;
+        padding-top: 30px;
+        padding-left: 80px;
+        margin-bottom: 20px;
+        font-size: 18px;
+        font-weight: 500;
+        background-color: rgba(255, 255, 255, 0.25);
+        border-radius: 4px;
+        box-shadow: 0 3px 3px -2px rgba(0,0,0,.2),0 3px 4px 0 rgba(0,0,0,.14),0 1px 8px 0 rgba(0,0,0,.12);
+      }
+      .kard__icon {
+        position: absolute;
+        top: 27px;
+        left: 27px;
+        width: 36px;
+        height: 36px;
+      }
+      .kard__info {
+        position: absolute;
+        top: 32px;
+        right: 24px;
+        font-size: 15px;
+        font-weight: 300;
+        opacity: 0.5;
+      }
+      .cta {
+        font-weight: 500;
+        text-align: center;
+        color: #7200ca;
+      }
+      .rellax {
+        will-change: transform;
+      }
+      .fadeout {
+        will-change: opacity;
+        transition: opacity 400ms cubic-bezier(.4, 0, .6, 1);
+      }
+      .fadeout--invisible {
+        opacity: 0;
+      }
+      .rellax.fadeout {
+        will-change: transform, opacity;
+      }
+      .hidden {
+        display: none;
+      }
+      .toggle-xxs__toggled {
+        display: none;
+      }
+      @media (max-width: 320px) {
+        .toggle-xxs__toggled {
+          display: inline;
+        }
+        .toggle-xxs__default {
+          display: none;
+        }
+      }
+      #scaledown {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        transform-origin: center bottom;
+        will-change: transform, top;
+      }
+    </style>
+  </head>
+  <body>
+    <svg width="0" height="0" class="hidden">
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="journalism-1">
+        <title>Journalism</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer2"
+        d="M32 17.8C32 9.8 16 8 2 8v44c14 0 30 2 30 10z" fill="none" stroke="#1b0000"
+        stroke-miterlimit="10" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"></path>
+        <path data-name="layer1" d="M24 20.3A60.7 60.7 0 0 0 10 18m14 9.8a60.7 60.7 0 0 0-14-2.3m14 10.3a60.7 60.7 0 0 0-14-2.3m14 9.8A60.7 60.7 0 0 0 10 41m30-5.2a60.7 60.7 0 0 1 14-2.3m-14 9.8A60.7 60.7 0 0 1 54 41"
+        fill="none" stroke="#1b0000" stroke-miterlimit="10" stroke-width="3" stroke-linejoin="round"
+        stroke-linecap="round"></path>
+        <path data-name="layer2" d="M54 8.1c2.7-.2 5.4-.1 8-.1v44c-14 0-30 2-30 10m0-44.2c0-4.1 4.1-6.6 10-8.1"
+        fill="none" stroke="#1b0000" stroke-miterlimit="10" stroke-width="3" stroke-linejoin="round"
+        stroke-linecap="round"></path>
+        <path data-name="layer1" d="M42 26.2l6-4 6 4v-22a67.4 67.4 0 0 0-12 1.7z"
+        fill="none" stroke="#7200ca" stroke-miterlimit="10" stroke-width="3" stroke-linejoin="round"
+        stroke-linecap="round"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="autobus-1">
+        <title>Autobus</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer2"
+        d="M29.1 8H35M20 54v6a2 2 0 0 1-2 2h-6a2 2 0 0 1-2-2v-6m44 0v6a2 2 0 0 1-2 2h-6a2 2 0 0 1-2-2v-6"
+        fill="none" stroke="#7200ca" stroke-linecap="round" stroke-linejoin="round"
+        stroke-width="3"></path>
+        <path data-name="layer1" d="M16.1 46H22m20.1 0H48M8 16h48M8 38h48m0 16V6a4 4 0 0 0-4-4H12a4 4 0 0 0-4 4v48z"
+        fill="none" stroke="#1b0000" stroke-linecap="round" stroke-linejoin="round"
+        stroke-width="3"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="bookshelf-1">
+        <title>Bookshelf</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer2"
+        fill="none" stroke="#7200ca" stroke-miterlimit="10" stroke-width="3" d="M42.142 10.764l9.848-1.737 9.03 51.21-9.849 1.737zM28 22h16v40H28m8-34v18"
+        stroke-linejoin="round" stroke-linecap="round"></path>
+        <path data-name="layer1" fill="none" stroke="#1b0000" stroke-miterlimit="10"
+        stroke-width="3" d="M12 62H2V10h10m0-8h16v60H12zm8 8v36" stroke-linejoin="round"
+        stroke-linecap="round"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="hospital-1">
+        <title>Hospital</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer2"
+        fill="none" stroke="#1b0000" stroke-linecap="round" stroke-miterlimit="10"
+        stroke-width="3" d="M26 62h-8V20h28v42h-8" stroke-linejoin="round"></path>
+        <path data-name="layer1" fill="none" stroke="#7200ca" stroke-linecap="round"
+        stroke-miterlimit="10" stroke-width="3" d="M7 8h6v6H7zm15 0h6v6h-6zm14 0h6v6h-6zm15 0h6v6h-6zM7 20h6v6H7zm44 0h6v6h-6zM7 32h6v6H7zm44 0h6v6h-6zM7 44h6v6H7zm44 0h6v6h-6z"
+        stroke-linejoin="round"></path>
+        <path data-name="layer2" fill="none" stroke="#1b0000" stroke-linecap="round"
+        stroke-miterlimit="10" stroke-width="3" d="M18 62H2V2h60v60H46" stroke-linejoin="round"></path>
+        <path data-name="layer2" fill="none" stroke="#1b0000" stroke-linecap="round"
+        stroke-miterlimit="10" stroke-width="3" d="M26 44h12v18H26z" stroke-linejoin="round"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="shield-security-1">
+        <title>Shield Security</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer2"
+        d="M56 12A33 33 0 0 1 32 2 33 33 0 0 1 8 12S5.9 48 32 62c26.1-14 24-50 24-50z"
+        fill="none" stroke="#1b0000" stroke-linecap="round" stroke-linejoin="round"
+        stroke-width="3"></path>
+        <path data-name="layer1" d="M45 24L31 38l-7-7" fill="none" stroke="#7200ca"
+        stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="hand-truck-1">
+        <title>Hand Truck</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer2"
+        fill="none" stroke="#1b0000" stroke-miterlimit="10" stroke-width="3" d="M33 49.3l22-7.9 6 2m-38-1L11 10.1H3"
+        stroke-linejoin="round" stroke-linecap="round"></path>
+        <circle data-name="layer2" cx="25" cy="50.1" r="8" fill="none"
+        stroke="#1b0000" stroke-miterlimit="10" stroke-width="3" stroke-linejoin="round"
+        stroke-linecap="round"></circle>
+        <path data-name="layer1" fill="none" stroke="#1b0000" stroke-miterlimit="10"
+        stroke-width="3" d="M59 32.4L30.9 42.6l-9.5-26.5L49.5 5.9 59 32.4z" stroke-linejoin="round"
+        stroke-linecap="round"></path>
+        <path data-name="layer1" fill="none" stroke="#7200ca" stroke-miterlimit="10"
+        stroke-width="3" d="M40.2 9.5l4.5 12.9-9 3.4L31 12.6" stroke-linejoin="round"
+        stroke-linecap="round"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="rotate-1">
+        <title>Rotate</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer1"
+        d="M60.693 22.023a3 3 0 0 0-4.17.784l-2.476 3.622A27.067 27.067 0 0 0 28 6C13.443 6 2 18.036 2 32.584a26.395 26.395 0 0 0 45.066 18.678 3 3 0 1 0-4.244-4.242A20.395 20.395 0 0 1 8 32.584C8 21.344 16.752 12 28 12a21.045 21.045 0 0 1 20.257 16.059l-4.314-3.968a3 3 0 0 0-4.062 4.418l9.737 8.952c.013.013.03.02.043.033.067.06.143.11.215.163a2.751 2.751 0 0 0 .243.17c.076.046.159.082.24.12a3.023 3.023 0 0 0 .279.123c.08.03.163.05.246.071a3.045 3.045 0 0 0 .323.07c.034.006.065.017.1.022.051.006.102-.002.154.002.063.004.124.017.187.017.07 0 .141-.007.212-.012l.08-.004.05-.003c.06-.007.118-.03.179-.04a3.119 3.119 0 0 0 .387-.087c.083-.027.16-.064.239-.097a2.899 2.899 0 0 0 .314-.146 2.753 2.753 0 0 0 .233-.151 2.944 2.944 0 0 0 .263-.2c.07-.06.135-.124.199-.19a3.013 3.013 0 0 0 .224-.262c.03-.04.069-.073.097-.114l7.352-10.752a3.001 3.001 0 0 0-.784-4.17z"
+        fill="none" stroke="#1b0000" stroke-miterlimit="10" stroke-width="3" stroke-linejoin="round"
+        stroke-linecap="round"></path>
+        <circle data-name="layer2" cx="29.5" cy="32.5" r="4" fill="none"
+        stroke="#7200ca" stroke-miterlimit="10" stroke-width="3" stroke-linejoin="round"
+        stroke-linecap="round"></circle>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="more-1">
+        <title>More</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <circle data-name="layer3"
+        cx="8" cy="32" r="6" fill="none" stroke="#1b0000" stroke-miterlimit="10"
+        stroke-width="3" stroke-linejoin="round" stroke-linecap="round"></circle>
+        <circle data-name="layer2" cx="56" cy="32" r="6" fill="none"
+        stroke="#1b0000" stroke-miterlimit="10" stroke-width="3" stroke-linejoin="round"
+        stroke-linecap="round"></circle>
+        <circle data-name="layer1" cx="32" cy="32" r="6" fill="none"
+        stroke="#1b0000" stroke-miterlimit="10" stroke-width="3" stroke-linejoin="round"
+        stroke-linecap="round"></circle>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="facebook-1">
+        <title>Facebook</title>
+        <desc>A color styled icon from Orion Icon Library.</desc>
+        <path data-name="layer1"
+        d="M58 0H6a6.018 6.018 0 0 0-6 6v52a6.018 6.018 0 0 0 6 6h28V38h-7V28h7v-5c.162-5.606 1.612-10.594 11.119-11H53v9.912h-6.662A3.15 3.15 0 0 0 43 25v3h10l-1.706 10H43v26h15a6.018 6.018 0 0 0 6-6V6a6.018 6.018 0 0 0-6-6z"
+        fill="#475993"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="youtube-1">
+        <title>Youtube</title>
+        <desc>A color styled icon from Orion Icon Library.</desc>
+        <path data-name="layer1"
+        d="M50.708 9H13.292A13.25 13.25 0 0 0 0 22.207v18.586A13.25 13.25 0 0 0 13.292 54h37.416A13.25 13.25 0 0 0 64 40.793V22.207A13.25 13.25 0 0 0 50.708 9zm-8.989 23.4l-17.501 8.3a.7.7 0 0 1-1.005-.63V22.962a.7.7 0 0 1 1.02-.623l17.5 8.812a.7.7 0 0 1-.015 1.253zm0 0"
+        fill="#f61c0d"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="student-1">
+        <title>Student</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer2"
+        d="M24 41.1V44c0 2 .6 4.9-10.4 7S2 62 2 62h60s0-8.6-12.4-11C38.9 48.9 39 46 39 44v-2.7"
+        fill="none" stroke="#1b0000" stroke-linecap="round" stroke-linejoin="round"
+        stroke-width="3"></path>
+        <path data-name="layer2" fill="none" stroke="#1b0000" stroke-linecap="round"
+        stroke-linejoin="round" stroke-width="3" d="M16 50.5L32 62l16-11.3m-10.4-8.4A17.2 17.2 0 0 0 44.8 32c3 0 3.7-4.3 3.7-5.3S49 22.1 46 22v-6m-28 0v6c-3 0-3 4.1-3 5s.4 5 3.4 5a15.9 15.9 0 0 0 7.2 10.3"></path>
+        <path data-name="layer1" fill="none" stroke="#1b0000" stroke-miterlimit="10"
+        stroke-width="3" d="M32 12L4 6l28-4 28 4-28 6z" stroke-linejoin="round"
+        stroke-linecap="round"></path>
+        <path data-name="layer1" fill="none" stroke="#7200ca" stroke-miterlimit="10"
+        stroke-width="3" d="M18 9v7l14 2 14-2V9M6 6.4V30" stroke-linejoin="round"
+        stroke-linecap="round"></path>
+      </symbol>
+    </svg>
+    <header style="height: 100vh; padding-top: 15vh;">
+      <div class="container">
+        <div class="row">
+          <div class="col-8 col-sm-7 col-md-6 col-lg-5 col-xl-4 mx-auto">
+            <div style="width: 100%; height: 0; overflow: visible; position: relative; padding-top: 166.667%;">
+              <img id="scaledown" src="img/hero.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section style="padding-top: 120px; padding-left: 20px;">
+        <div class="container">
+          <div class="row">
+            <div class="col-8 col-sm-7 col-md-6 col-lg-5 col-xl-3 mx-auto">
+              <div class="rellax fadeout" data-fadeout-id="fadeout-1">
+                <img src="img/do.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section style="padding-top: 360px;">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-sm-11 col-md-10 col-lg-9 col-xl-8 mx-auto">
+              <div id="fadeout-1" class="rellax" data-rellax-speed="1">
+                <h1 class="animate"><span style="font-weight: 900;">내일</span>의 총학생회.</h1>
+                <p class="animate">목소리 큰 소수가 아니라 모든 학생들을 대표하는 총학생회.</p>
+                <p class="animate">말만 그럴듯하게 하는 총학생회가 아니라 일 잘하는 총학생회.</p>
+                <p class="animate">교직원 사회와의 적대적인 관계를 청산하고 공동체적 신뢰를 회복하는 총학생회.</p>
+                <p class="animate">총장선출제도부터 생활 속 사소한 문제에까지 학생들의 요구를 반영하는 총학생회.</p>
+                <p class="animate">오늘의 문제를 해결하는 것을 넘어 내일의 방향성을 제시하는 총학생회를 만들겠습니다.</p>
+                <p class="animate cta">
+                  <a href="campaign">기조 전문 보기 &gt;</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section style="padding-right: 20px; padding-left: 20px;">
+        <div class="container">
+          <div class="row">
+            <div class="col-8 col-sm-7 col-md-6 col-lg-5 col-xl-3 mx-auto">
+              <div class="rellax">
+                <img src="img/da.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section style="padding-top: 600px;">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-sm-11 col-md-10 col-lg-9 col-xl-8 mx-auto">
+              <div class="rellax" data-rellax-speed="1">
+                <h1 class="animate"><span style="font-weight: 900;">내일</span>의 공약.</h1>
+                <a href="policies/academics"><div class="animate kard"><svg class="kard__icon"><use xlink:href="#journalism-1"></use></svg>교육<span class="kard__info">11개의 공약</span></div></a>
+                <a href="policies/transportation"><div class="animate kard"><svg class="kard__icon"><use xlink:href="#autobus-1"></use></svg>교통<span class="kard__info">5개의 공약</span></div></a>
+                <a href="policies/welfare"><div class="animate kard"><svg class="kard__icon"><use xlink:href="#hand-truck-1"></use></svg>복지<span class="kard__info">9개의 공약</span></div></a>
+                <a href="policies/rights"><div class="animate kard"><svg class="kard__icon"><use xlink:href="#shield-security-1"></use></svg>인권, 안전<span class="kard__info">8개의 공약</span></div></a>
+                <a href="policies/graduate"><div class="animate kard"><svg class="kard__icon"><use xlink:href="#student-1"></use></svg>진로, 대학원<span class="kard__info">3개의 공약</span></div></a>
+                <a href="policies/library"><div class="animate kard"><svg class="kard__icon"><use xlink:href="#bookshelf-1"></use></svg>도서관<span class="kard__info">4개의 공약</span></div></a>
+                <a href="policies/dorm"><div class="animate kard"><svg class="kard__icon"><use xlink:href="#hospital-1"></use></svg>기숙사<span class="kard__info">4개의 공약</span></div></a>
+                <a href="policies/reform"><div class="animate kard"><svg class="kard__icon"><use xlink:href="#rotate-1"></use></svg><span class="toggle-xxs"><span class="toggle-xxs__default">총학생회 구조개혁</span><span class="toggle-xxs__toggled">학생회 개혁</span></span><span class="kard__info">5개의 공약</span></div></a>
+                <a href="policies/etc"><div class="animate kard"><svg class="kard__icon"><use xlink:href="#more-1"></use></svg>기타 정책<span class="kard__info">17개의 공약</span></div>
+                <p class="animate cta">
+                  <a href="policies/naeil.pdf">공약 전체 보기 (10MB) &gt;</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section style="padding-right: 10px;">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-sm-11 col-md-10 col-lg-9 col-xl-8 mx-auto">
+              <div class="rellax">
+                <img src="img/fam.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer style="height: 100vh; margin-top: 840px;">
+      <div class="container">
+        <div class="row">
+          <div class="col-10 col-sm-9 col-md-8 col-lg-7 col-xl-5 mx-auto text-center">
+            <div style="padding-top: 37.5vh;">
+              <img src="img/logo.png">
+            </div>
+            <div style="padding-top: 12.5vh;">
+              <a href="https://www.facebook.com/tomorrowofSNU"><svg style="width: 48px; height: 48px;"><use xlink:href="#facebook-1"></use></svg></a><a href="https://www.youtube.com/channel/UCU3OBAS1QR1KH3me_j2yPTA"><svg style="width: 54px; height: 54px; margin-left: 28px;"><use xlink:href="#youtube-1"></use></svg></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
