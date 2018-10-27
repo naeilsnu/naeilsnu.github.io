@@ -141,7 +141,7 @@
       function reveal() {
         var el = document.querySelector('article'),
             rect = el.getBoundingClientRect();
-        if (rect.top + 200 <= document.documentElement.clientHeight)
+        if (rect.top + 180 <= document.documentElement.clientHeight)
           el.classList.add('reveal');
       }
       $(reveal);
