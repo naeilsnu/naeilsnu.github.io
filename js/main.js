@@ -24,7 +24,7 @@ $(window).scroll(function() {
   for (i = 0; i < sections.length; ++i) {
     el = sections[i];
     rect = el.getBoundingClientRect();
-    if (rect.top + 200 <= viewportHeight)
+    if (rect.top + 210 <= viewportHeight)
       el.classList.add('reveal');
   }
 
